@@ -34,11 +34,9 @@ int main()
 }
 double getA(const double x, const double y, const double z)
 {
-	double a = pow(x, y / x) - pow(y / x, 1 / 3);
-	return a;
+	return pow(x, y / x) - pow(y / x, 1 / 3);
 }
 double getB(const double x, const double y, const double z)
 {
-	double b = (x - y) + ((y - z )/ (y - x)) / (3 + (pow(z, 2) / 5));
-	return b;
+	return (x - y) + ((y - z )/ (y - x)) / (3 + (pow(z, 2) / 5));
 }
