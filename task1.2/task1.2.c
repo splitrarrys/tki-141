@@ -27,7 +27,7 @@ double input(void);
  * @brief Точка входа в программу.
  * @return Возвращает в случае успеха.
 */
-int main() {
+int main(void) {
     printf("Enter R:\t");
     double R = input();
     printf("Volume of a ball:%f\nLateral surface area of a ball:%f", get_volume(R), get_surface(R));
@@ -35,8 +35,7 @@ int main() {
 }
 
 double get_volume(const double R) {
-    float V = R * R * R * 4 / 3 * M_PI;
-    return V;
+    return R * R * R * 4 / 3 * M_PI;
 }
 
 double get_surface(const double R) {
@@ -45,7 +44,7 @@ double get_surface(const double R) {
 }
 
 double input(void) {
-    double number;
+    double number = 0;
     if (scanf_s("%lf", &number) != 1) {
         printf("Input error");
         exit(EXIT_FAILURE);
