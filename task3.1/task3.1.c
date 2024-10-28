@@ -1,0 +1,46 @@
+﻿#include <stdio.h>
+#include <math.h>
+#include <stdlib.h>
+
+
+/**
+@brief проверяет вводимое значение, является ли оно числом
+@return Возвращает введённое значение, если оно является числом
+*/
+double input(void);
+
+
+/**
+@brief Точка входа в программу
+@return Возвращает в случае успеха
+*/
+int main() {
+	const double x_start = input();
+	const double x_end = input();
+	const double delta_x = input();
+
+	if (delta_x < 0) {
+		printf("your step is less then 0 (thats wrong)");
+		return 0;
+	}
+	else {
+		printf("x\t|\ty\n");
+
+		for (double x = x_start; x < (x_end + delta_x); x += delta_x) {
+			const double y = x + sqrt(x) + cbrt(x) - 2.5;
+			printf("%lf|%lf\n", x_start, y);
+		}
+	}
+
+	return 0;
+}
+
+double input(void)
+{
+	double number;
+	if (scanf_s("%lf", &number) != 1) {
+		printf("input error");
+		exit(EXIT_FAILURE);
+	}
+	return number;
+}
