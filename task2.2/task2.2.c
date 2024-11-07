@@ -26,6 +26,7 @@ int main(void)
 	const double a = input();
     const double x = input();
     printf("func for y:\t%lf",func_for_y(a,x));
+    return 0;
 }
 
 double func_for_y(const double a, const double x) {
