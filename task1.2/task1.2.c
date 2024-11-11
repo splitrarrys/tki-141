@@ -39,8 +39,8 @@ double get_volume(const double R) {
 }
 
 double get_surface(const double R) {
-    float S = 4 * R * R * M_PI;
-    return S;
+    return 4 * R * R * M_PI;
+    
 }
 
 double input(void) {
