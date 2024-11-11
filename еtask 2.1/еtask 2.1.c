@@ -43,7 +43,8 @@ int main(void)
     const double radius = input();
 
 
-    printf("Area of a trapezoid:\t%lf\nArea of a circle :\t%lf", area_of_a_trapezoid(upper_base, lower_base, height),23area_of_circle(radius));
+    printf("Area of a trapezoid:\t%lf\nArea of a circle :\t%lf", area_of_a_trapezoid(upper_base, lower_base, height), area_of_circle(radius));
+    return 0;
 }
 
 double input(void)
