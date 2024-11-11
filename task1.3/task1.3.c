@@ -8,7 +8,7 @@
 @param Параметр resistance_of_the_third_resistor сопротивление третьего резистора
 @return Возвращает значение общего параллельного сопротивления цепи
 */
-double func_for_finding_general_resistance_of_paralel_resistors(double resistance_of_the_first_resistor, double resistance_of_the_second_resistor, double resistance_of_the_third_resistor);
+double general_resistance(double first_resistance, double second_resistance, double third_resistance);
 
 /**
 @brief проверяет вводимое значение, является ли оно числом
@@ -23,12 +23,12 @@ double input(void);
 int main(void)
 {
 	printf("Print resistance of the first resistor\t");
-	double resistance_of_the_first_resistor = input();
+	double first_resistance = input();
 	printf("Print resistance of the second resistor\t");
-	double resistance_of_the_second_resistor = input();
+	double second_resistance = input();
 	printf("Print resistance of the third resistor\t");
-	double resistance_of_the_third_resistor = input();
-	printf("General resistance:\t%lf", func_for_finding_general_resistance_of_paralel_resistors(resistance_of_the_first_resistor, resistance_of_the_second_resistor, resistance_of_the_third_resistor));
+	double third_resistance = input();
+	printf("General resistance:\t%lf", general_resistance(first_resistance, second_resistance, third_resistance));
 
 }
 
@@ -42,6 +42,6 @@ double input(void)
 	return number;
 }
 
-double func_for_finding_general_resistance_of_paralel_resistors(double r1, double r2, double r3) {
-	return 1 / ((1 / r1) + (1 / r2) + (1 / r3));
+double general_resistance(double first_resistance, double second_resistance, double third_resistance) {
+	return 1 / ((1 / first_resistance) + (1 / second_resistance) + (1 / second_resistance));
 }
