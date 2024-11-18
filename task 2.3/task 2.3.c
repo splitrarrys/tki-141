@@ -12,7 +12,7 @@ double input(void);
 @brief Точка входа в программу
 @return Возвращает в случае успеха
 */
-int main() {
+int main(void) {
     for (int i = 0; i < 3; ++i) {
         double number = input();
 
