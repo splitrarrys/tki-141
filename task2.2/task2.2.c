@@ -30,12 +30,10 @@ int main(void)
 }
 
 double func_for_y(const double a, const double x) {
-    if (x < 1.2) {
-        return a * pow(x, 2) + 4;
-    }
-    if (x >= 1.2) {
-        return (a + 4 * x) * sqrt(pow(x,2 * a));
-    }
+    if (x < 1.2);
+    else  a * pow(x, 2) + 4;
+    if (x >= 1.2);
+    else  (a + 4 * x) * sqrt(pow(x,2 * a));
 }
 
 double input(void)
