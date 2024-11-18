@@ -44,6 +44,10 @@ int main(void)
 
 
     printf("Area of a trapezoid:\t%lf\nArea of a circle :\t%lf", area_of_a_trapezoid(upper_base, lower_base, height), area_of_circle(radius));
+<<<<<<< HEAD
+=======
+    return 0;
+>>>>>>> 8dfbe028fbb9026f349870e0411ed332574d2d1d
 }
 
 double input(void)
