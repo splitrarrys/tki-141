@@ -12,10 +12,11 @@ double input(void);
 @brief Точка входа в программу
 @return Возвращает в случае успеха
 */
-int main(void) {
+int main() {
     for (int i = 0; i < 3; ++i) {
         double number = input();
 
+        // Обработка числа и вывод результата
         if (number > 0) {
             printf("%lf\n", number * number);
         }

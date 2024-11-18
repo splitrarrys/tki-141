@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="task 2.3.c">
+    <ClCompile Include="task 2.3%281%29.c">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
