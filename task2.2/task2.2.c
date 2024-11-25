@@ -29,7 +29,8 @@ int main(void)
     return 0;
 }
 
-double func_for_y(const double a, const double x) {
+double func_for_y(const double a, const double x)
+{
     if (x < 1.2)
     {
         return a * pow(x, 2) + 4;
