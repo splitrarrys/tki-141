@@ -44,6 +44,7 @@ int main(void)
 
 
     printf("Area of a trapezoid:\t%lf\nArea of a circle :\t%lf", func_for_finding_area_of_a_trapezoid(upper_base, lower_base, height), func_for_finding_area_of_circle(radius));
+    return 0;
 }
 
 double input(void)
