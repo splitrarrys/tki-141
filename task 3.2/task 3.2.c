@@ -82,7 +82,7 @@ double func_for_summ_2(const double e) {
 }
 
 double recurrent(const int k) {
-    return 1/(k+1);
+    return -1/(k+1);
 }
 
 double input(void) {
