@@ -29,6 +29,7 @@ int main(void)
 	printf("Print resistance of the third resistor\t");
 	double third_resistance = input();
 	printf("General resistance:\t%lf", general_resistance(first_resistance, second_resistance, third_resistance));
+	return 0;
 
 }
 
