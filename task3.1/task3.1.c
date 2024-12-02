@@ -28,12 +28,11 @@ int main() {
                 printf("%lf|%lf\n", x, y);
             }
             else {
-                printf("x = %lf: функция не определена\n", x);
+                printf("x = %lf: function not defined\n", x);
             }
         }
     }
     else {
-        printf("не выполняется ООФ");
         return 1;
     }
 
