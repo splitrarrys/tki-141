@@ -1,8 +1,9 @@
-﻿#include <stdio.h>
-#include <math.h>
-#include <stdlib.h>
+﻿
 #define _USE_MATH_DEFINES
+#include <stdio.h>
+#include <math.h>
 #include <float.h>
+#include <stdlib.h>
 
 /**
 @brief проверяет вводимое значение, является ли оно числом
@@ -47,4 +48,10 @@ double input(void)
         exit(EXIT_FAILURE);
     }
     return number;
+}
+void check_x(const double x) {
+    if (x <= DBL_EPSILON) {
+        printf("input error");
+        exit(EXIT_FAILURE);
+    }
 }
