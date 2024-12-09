@@ -1,7 +1,8 @@
 ﻿#include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-
+#define _USE_MATH_DEFINES
+#include <float.h>
 
 /**
 @brief проверяет вводимое значение, является ли оно числом
@@ -23,7 +24,7 @@ int main() {
         printf("x\t|\ty\n");
         for (double x = x_start; x < (x_end + delta_x); x += delta_x) {
             // Проверка области определения функции
-            if (x >= 0) {
+            if (x >= -DBL_EPSILON) {
                 const double y = x + sqrt(x) + cbrt(x) - 2.5;
                 printf("%lf|%lf\n", x, y);
             }
